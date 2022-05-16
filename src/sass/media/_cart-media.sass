@@ -1,0 +1,55 @@
+@media screen and ( max-width: 1190px)
+    .header
+        &__logo
+            flex-basis: 100%
+    .cart
+        &__form
+            max-width: 90%
+@media screen and ( max-width: 992px )
+    .header
+        &__cart,
+        &__nav
+            display: none
+    .nav
+        display: flex
+    .cart
+        &__title
+            font-size: 20px
+            line-height: 25px
+        &-item
+            &__title,
+            &__color,
+            &__size,
+            &__quantity
+                font-size: 16px
+                line-height: 20px
+            &__controls
+                width: 100px
+            &__left
+                margin-right: 20px
+        &__amount,
+        &__empty
+            font-size: 16px
+            line-height: 20px
+    .form
+        &__input
+            font-size: 16px
+            line-height: 20px
+            flex-basis: 100%
+            margin-bottom: 20px
+            &::placeholder
+                font-size: 16px
+                line-height: 20px
+        &__btn
+            font-size: 16px
+            height: 60px
+            flex-basis: 100%
+        &__main
+            flex-wrap: wrap
+    .success
+        font-size: 16px
+        line-height: 20px
+@media screen and ( max-width: 576px )
+    .menu
+        &__block
+            width: 100%

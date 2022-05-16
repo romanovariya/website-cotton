@@ -1,0 +1,87 @@
+@media screen and ( max-width: 1190px)
+    .header
+        &__logo
+            flex-basis: 100%
+    .hero
+        min-height: 500px
+        height: 600px
+        &__title
+            font-size: 40px
+            line-height: 50px
+        &__subtitle
+            font-size: 20px
+            line-height: 150%
+    .catalog
+        &__item
+            flex-basis: 23%
+        &__photo
+            height: 250px
+        &__title
+            margin-top: 0
+            font-size: 20px
+            line-height: 25px
+        &__name
+            font-size: 20px
+            line-height: 25px
+    .sizes
+        &__title
+            margin-top: 0
+            font-size: 20px
+            line-height: 25px
+        &__data
+            font-size: 20px
+    .questions
+        &__title
+            margin-top: 0
+            font-size: 20px
+            line-height: 25px
+@media screen and ( max-width: 992px )
+    .header
+        &__cart,
+        &__nav
+            display: none
+    .nav
+        display: flex
+    .hero
+        &__block
+            max-width: 60%
+    .catalog
+        &__menu
+            flex-wrap: wrap
+        &__item
+            flex-basis: 45%
+            margin-bottom: 30px
+        &__photo
+            height: 400px
+    .sizes
+        &__subtitle
+            font-size: 16px
+            max-width: 70%
+@media screen and ( max-width: 768px )
+    .hero
+        &__block
+            max-width: 100%
+        &__title
+            font-size: 35px
+            line-height: 40px
+        &__subtitle
+            font-size: 16px
+            line-height: 20px
+    .catalog
+        padding-bottom: 0
+    .sizes
+        &__subtitle
+            max-width: 90%
+        &__table
+            width: 90%
+@media screen and ( max-width: 576px )
+    .catalog
+        &__photo
+            height: 200px
+    .question
+        &__text,
+        &__description
+            font-size: 18px
+    .menu
+        &__block
+            width: 100%

@@ -1,0 +1,113 @@
+.header
+    padding: 37px 0
+    background-color: $blue
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+    &__cart,
+    &__link
+        font-family: Manrope, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+        color: $text
+        text-decoration: none
+    &__logo
+        font-family: Forum, serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        color: $text
+        text-decoration: none
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__nav
+        flex-basis: 35%
+        display: flex
+        justify-content: space-between
+    &__cart
+        flex-basis: 40%
+        display: flex
+        justify-content: flex-end
+    &__logo
+        flex-basis: 40%
+        display: flex
+        justify-content: center
+.nav
+    width: 30px
+    height: 20px
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+    &__line
+        height: 1px
+        background-color: $text
+        width: 100%
+        border-radius: 50%
+.menu
+    display: none
+    &__overlay
+        background-color: rgba(183, 192, 201, 0.64)
+        height: 100%
+        width: 100%
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 10
+        transition: all 1s ease
+    &__block
+        position: fixed
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: 11
+        width: 50%
+        height: 100%
+        background-color: $blue
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        padding: 0 30px
+    &--active
+        display: block
+    &__link
+        font-family: Manrope, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 25px
+        color: $text
+        text-decoration: none
+        margin-bottom: 10px
+.noscroll
+    overflow: hidden
+.close
+    position: absolute
+    right: 32px
+    top: 32px
+    width: 32px
+    height: 32px
+    opacity: 0.5
+    &:before,
+    &:after
+        position: absolute
+        left: 15px
+        content: ' '
+        height: 33px
+        width: 2px
+        background-color: $text
+    &:before
+        transform: rotate(45deg)
+    &:after
+        transform: rotate(-45deg)

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)), (a = e.getElementsByTagName(t)[0]), (k.async = 1), (k.src = r), a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(87236146, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div><img src="https://mc.yandex.ru/watch/87236146" style="position: absolute; left: -9999px" alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <title>ТВОЙ ХЛОПОК - Корзина</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header__container">
+        <div class="header__nav">
+          <a href="./#catalog" class="header__link">КАТАЛОГ</a>
+          <a href="./#sizes" class="header__link">РАЗМЕРЫ</a>
+          <a href="./#faq" class="header__link">F.A.Q.</a>
+          <a href="./#contacts" class="header__link">КОНТАКТЫ</a>
+        </div>
+
+        <a href="./" class="header__logo">ТВОЙ ХЛОПОК</a>
+
+        <a href="/cart" class="header__cart">КОРЗИНА</a>
+        <div class="nav"><span class="nav__line"></span><span class="nav__line"></span><span class="nav__line"></span></div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="menu__overlay"></div>
+      <div class="menu__block">
+        <div class="close"></div>
+        <a href="/#catalog" class="menu__link">КАТАЛОГ</a>
+        <a href="/#sizes" class="menu__link">РАЗМЕРЫ</a>
+        <a href="/#faq" class="menu__link">F.A.Q.</a>
+        <a href="/#contacts" class="menu__link">КОНТАКТЫ</a>
+        <a href="/cart" class="menu__link">КОРЗИНА</a>
+      </div>
+    </div>
+    <!-- header -->
+    <section class="cart js-cart-wrapper">
+      <div class="container cart__container">
+        <h1 class="cart__title">Корзина</h1>
+        <form action="" method="POST" class="cart__form form">
+          <div class="cart__block"></div>
+
+          <div class="cart__amount">Всего: <span class="cart__sum"></span> шт</div>
+
+          <div class="form__main">
+            <input type="text" class="form__input" name="Имя" placeholder="Ваше имя" required="" />
+            <input type="text" class="form__input" name="Почта" placeholder="Ваш email для связи" required="" />
+            <button type="submit" class="form__btn">ОФОРМИТЬ ЗАЯВКУ</button>
+          </div>
+        </form>
+        <div class="cart__empty">Нет товаров</div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__container container">
+        <div class="footer__phones">
+          <span class="footer__text">Телефон для связи:</span>
+          <a href="tel:+79255171707" class="footer__link">+ 7 (925) 517-17-07</a>
+        </div>
+
+        <div class="footer__emails">
+          <span class="footer__text">Email для связи:</span>
+          <a href="mailto:tvoy-hlopok@mail.ru" class="footer__link">tvoy-hlopok@mail.ru</a>
+        </div>
+
+        <span class="footer__text">Режим работы с 10:00 до 18:00 по МСК</span>
+
+        <span class="footer__bottom">Разработка сайта <a target="_blank" rel="nofollow noopner" href="https://riyaromanova.ru/" class="footer__author">@riyaromanova</a></span>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+    <div class="success">
+      <h3 class="success__heading">Спасибо за заявку!</h3>
+      <p class="success__paragraph">В ближайшем времени мы свяжемся с вами для утверждения заказа</p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

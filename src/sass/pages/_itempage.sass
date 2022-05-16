@@ -1,0 +1,259 @@
+.card
+    padding-top: 50px
+    height: 90vh
+    max-height: 900px
+    &__container
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        position: relative
+.slider
+    flex-basis: 50%
+    flex-shrink: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100%
+    overflow: hidden
+    &__main
+        width: 100%
+        height: 85%
+        margin-bottom: 30px
+        position: relative
+    &__item
+        position: absolute
+        width: 100%
+        height: 100%
+        opacity: 0
+        visibility: hidden
+        transition: all 0.5s ease
+        &--active
+            opacity: 1
+            visibility: visible
+            transition: all 0.5s ease
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: contain
+    &__control
+        display: flex
+        justify-content: space-between
+        width: 20%
+    &__arrow
+        cursor: pointer
+.product
+    flex-shrink: 0
+    flex-basis: 49%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: 85%
+    &__name
+        font-family: Forum, serif
+        font-style: normal
+        font-weight: normal
+        font-size: 32px
+        line-height: 35px
+        color: $text
+        margin-bottom: 10px
+        margin-top: 0
+    &__price
+        margin-top: 0
+        font-family: Manrope, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 22px
+        color: $text
+        margin-bottom: 13px
+    &__info
+        margin-top: 0
+        font-family: Manrope, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 22px
+        color: $text
+        margin-bottom: 13px
+    &__button
+        margin-bottom: 50px
+        background-color: $blue
+        padding: 20px 60px
+        border: none
+        // border-radius: 10px
+        font-family: Forum, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 15px
+        color: $text
+        cursor: pointer
+    &__table
+        border: 1px solid #c4c4c4
+        border-collapse: collapse
+    &__data
+        border: 1px solid #c4c4c4
+        font-family: Forum, serif
+        font-style: normal
+        font-weight: normal
+        font-size: 25px
+        line-height: 28px
+        text-align: center
+        color: $text
+        padding: 0 50px
+.colors
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 30px
+    &__item
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        cursor: pointer
+        margin-right: 20px
+        &--white
+            background-color: #fff
+        &--black
+            background-color: #272727
+        &--red
+            background-color: #AC3434
+        &--orange
+            background-color: #D98D47
+        &--yellow
+            background-color: #EBEE5C
+        &--green
+            background-color: #7CA070
+        &--dgreen
+            background-color: #3A5735
+        &--blue
+            background-color: #6C98DB
+        &--navy
+            background-color: #5F5CE0
+        &--dblue
+            background-color: #262551
+        &--gray
+            background-color: #626262
+        &--lgreen
+            background-color: #ABD369
+        &--orange
+            background-color: #E75700
+        &--pink
+            background-color: #DB0031
+        &--berry
+            background-color: #BD4575
+        &--active
+            box-shadow: 0px 4px 8px #B3B3B3
+.sizes
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 50px
+    &__item
+        height: 50px
+        width: 50px
+        border: 1px solid #c4c4c4
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $text
+        cursor: pointer
+        margin-right: 20px
+        &--active
+            background-color: $text
+            color: #fff
+            border: 1px solid $text
+    &__text
+        font-family: Forum, serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 22px
+.material,
+.clasp
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 70%
+    margin-bottom: 20px
+    &__item
+        padding: 10px 20px
+        border: 1px solid #c4c4c4
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $text
+        cursor: pointer
+        margin-right: 20px
+        &--active
+            background-color: $text
+            color: #fff
+            border: 1px solid $text
+    &__text
+        font-family: Forum, serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 22px
+.picture
+    margin-bottom: 50px
+    &__container
+        display: flex
+        align-items: center
+        justify-content: center
+    &__pic
+        max-width: 70%
+    &__img
+        width: 100%
+        object-fit: contain
+.amount
+    display: flex
+    align-items: center
+    width: 150px
+    height: 40px
+    margin-bottom: 20px
+    &__btn
+        flex-basis: 20%
+        border: none
+        background-color: $blue
+        color: #fff
+        height: 100%
+        cursor: pointer
+        &--minus
+            border-radius: 5px 0px 0px 5px
+        &--plus
+            border-radius: 0px 5px 5px 0px
+    &__quantity
+        flex-basis: 60%
+        background-color: #fff
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: Manrope, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 27px
+        color: $text
+.notification
+    position: fixed
+    top: 30px
+    right: 30px
+    background: #FFFFFF
+    // border-radius: 10px
+    padding: 25px 40px
+    opacity: 0
+    visibility: hidden
+    transition: all ease 0.7s
+    font-family: Forum, serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 22px
+    color: $text
+    z-index: 5
+    &--active
+        opacity: 1
+        visibility: visible
